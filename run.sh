@@ -3,9 +3,9 @@
 
 while true
 do
-    if pidof -x "UHCity" >/dev/null; then
+    if pidof -x "UHCity-Server" >/dev/null; then
         sleep 2s
     else
-        ./UHCity
+        nohup ./UHCity-Server &
     fi
 done
